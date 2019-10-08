@@ -1,7 +1,7 @@
 /*
 // exo 1 - sol 1
 
-let chiffres = [10, 15, 20, 15, 14, 8];
+let chiffres = [100, 15, 20, 15, 14, 8];
 
 let sum = 0;
 
@@ -14,7 +14,6 @@ let output = 'Somme = ' + sum;
 
 document.getElementById('output').textContent = output;
 */
-
 /*
 // exo 1 - sol 2
 
@@ -22,17 +21,15 @@ let chiffres = [10, 15, 20, 15, 14, 8];
 
 let sum = 0;
 
-for (chiffre of chiffres) {
+for (currentChiffre of chiffres) {
 
-    sum = sum + chiffre;
+    sum = sum + currentChiffre;
 }
 
 let output = 'Somme = ' + sum;
 
 document.getElementById('output').textContent = output;
 */
-
-
 /*
 // exo 2
 
@@ -47,15 +44,16 @@ for(let index = 0; index < number; index++) {
     notes[index] = note;
 }
 
-let output = 'Notes des élèves : ';
+let output = 'Notes des élèves : <ul>';
 
 for(let index = 0; index < notes.length; index++) {
-    output = output + notes[index] + ' ';
+    output = output + '<li> Elève ' + (index + 1) + ' : ' + notes[index] + '</li>';
 }
 
-document.getElementById('output').textContent = output;
-*/
+output = output + "</ul>";
 
+document.getElementById('output').innerHTML = output;
+*/
 
 // exo 3
 
@@ -72,7 +70,7 @@ for(let index = 0; index < number; index++) {
 
 let nbMoyennes = 0;
 
-for(let note of notes) {
+for(note of notes) {
 
     if (note >= 5) {
         

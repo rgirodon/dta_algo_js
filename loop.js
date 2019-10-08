@@ -40,7 +40,6 @@ let correctAnswer = 7;
 let userAnswer = parseInt(prompt('Entrez un nombre entre 0 et 10'));
 
 while (userAnswer != correctAnswer) {
-
     let msg = '';
 
     if (userAnswer < correctAnswer) {

@@ -12,12 +12,25 @@ function sum(chiffres) {
     return result;
 }
 
-let output = 'Somme = ' + sum([1, 2, 3, 4, 5]);
+function avg(chiffres) {
 
-document.getElementById('output').textContent = output;
+    let result = sum(chiffres) / chiffres.length;
+
+    return result;
+}
+
+let tab = [8, 9, 10];
+
+let output1 = 'Somme = ' + sum(tab);
+
+document.getElementById('output1').textContent = output1;
+
+let output2 = 'Moyenne = ' + avg(tab);
+
+document.getElementById('output2').textContent = output2;
 */
 
-/*
+
 // exo 2
 function max(chiffres) {
 
@@ -34,12 +47,32 @@ function max(chiffres) {
     return max;
 }
 
-let output = 'Max = ' + max([1, 2, 3, 4, 5]);
+function min(chiffres) {
 
-document.getElementById('output').textContent = output;
-*/
+    let min = null;
+    
+    for (let chiffre of chiffres) {
 
+        if (min == null || chiffre < min) {
+        
+            min = chiffre;
+        }
+    }
 
+    return min;
+}
+
+let tab = [10, 22, 3, 41, 5];
+
+let output1 = 'Max = ' + max(tab);
+
+document.getElementById('output1').textContent = output1;
+
+let output2 = 'Min = ' + min(tab);
+
+document.getElementById('output2').textContent = output2;
+
+/*
 // exo 3
 function customFunction(param1, param2) {
 
@@ -56,3 +89,4 @@ function customFunction(param1, param2) {
 let output = 'Custom = ' + customFunction(100, 20);
 
 document.getElementById('output').textContent = output;
+*/

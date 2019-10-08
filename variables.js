@@ -1,3 +1,4 @@
+/*
 // exo 1
 
 let a = 12;
@@ -9,8 +10,8 @@ let c = a * b;
 let outputExo1 = 'Exo1 : c = ' + c;
 
 document.getElementById('outputExo1').textContent = outputExo1;
-
-
+*/
+/*
 // exo 2
 
 let d = 14;
@@ -26,7 +27,7 @@ d = temp;
 let outputExo2 = 'Exo2 : d = ' + d + ', e = ' + e;
 
 document.getElementById('outputExo2').textContent = outputExo2;
-
+*/
 
 // exo 3
 
